@@ -1,0 +1,15 @@
+.feedbackList {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+.feedbackItem {
+    list-style: none;
+}
+.feedbackItem :nth-child(-n + 2) {
+    margin-left: 10px;
+}
+.feedbackButton {
+    text-align: center;
+}

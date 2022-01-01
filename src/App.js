@@ -1,9 +1,9 @@
-import { Component } from 'react/cjs/react.development';
+import { Component } from 'react';
 import './App.css';
 import FeedbackOptions from './Components/FeedbackOptions/FeedbackOptions';
 import Notification from './Components/Notification/Notification';
-import Section from './Components/PageSection/PageSection';
-import Statistics from './Components/Statistics/statistics';
+import Section from './Components/Section/Section';
+import Statistics from './Components/Statistics/Statistics';
 
 const options = ['good', 'neutral', 'bad'];
 
@@ -22,8 +22,8 @@ class App extends Component {
         return Math.round((good / this.countTotalFeedback()) * 100);
     }
     setValue = e => {
-        const name = e.target.name;
-        this.setState(prevState => ({ [name]: prevState[name] + 1 }));
+        const name = e.target;
+        this.setState(state => ({ [name]: state[name] + 1 }));
     };
     render() {
         const { good, neutral, bad } = this.state;
