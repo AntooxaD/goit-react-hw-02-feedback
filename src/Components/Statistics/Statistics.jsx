@@ -18,7 +18,7 @@ class Statistics extends Component {
                 <li className={style.statisticItem}>Bad: {bad}</li>
                 <li className={style.statisticItem}>Total: {total}</li>
                 <li className={style.statisticItem}>
-                    PositivePercentage: {positivePercentage}
+                    Positive Percentage: {positivePercentage} %
                 </li>
             </ul>
         );

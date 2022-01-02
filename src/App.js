@@ -21,9 +21,8 @@ class App extends Component {
         const { good } = this.state;
         return Math.round((good / this.countTotalFeedback()) * 100);
     }
-    setValue = e => {
-        const name = e.target;
-        this.setState(state => ({ [name]: state[name] + 1 }));
+    setValue = key => {
+        this.setState(state => ({ [key]: state[key] + 1 }));
     };
     render() {
         const { good, neutral, bad } = this.state;
